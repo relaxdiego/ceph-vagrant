@@ -4,6 +4,8 @@ su vagrant -c "ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa"
 
 sudo apt-get install -y sshpass
 
+echo -e "192.168.251.100\tnode1" >> /etc/hosts
+
 echo "Host node1
     HostName 192.168.251.100
     StrictHostKeyChecking no
