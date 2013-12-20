@@ -18,3 +18,6 @@ sudo apt-get install ceph-common -y
 sudo apt-get install -y ceph-deploy
 
 su vagrant -c "ceph-deploy install node1"
+su vagrant -c "ceph-deploy new node1"
+su vagrant -c "ceph-deploy mon create node1"
+su vagrant -c "ceph-deploy gatherkeys node1"
